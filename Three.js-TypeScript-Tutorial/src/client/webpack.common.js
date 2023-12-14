@@ -8,7 +8,10 @@ module.exports = {
     './src/client/css/main.css',
   ],
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Three.js Learning',
+      template: './src/client/index.html',
+    }),
     new MiniCssExtractPlugin(),
   ],
   module: {
